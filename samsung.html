@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MobilShop</title>
+        <link rel="stylesheet" type='text/css' href="samsung.css">
+        <script src="js\jquery-3.2.1.min.js"></script>
+        <script>
+           $(document).ready(function(){
+              $("#welcome").click(function(){
+                  $(this).hide(400);
+                  $(this).show(300);
+               });
+
+           });
+        </script>
+    </head>
+
+	<body>
+
+	<header>
+      <p id="welcome">Welcome!</p>
+	<nav>
+	<div class="logo"><img src="Foto/logo1.jpg" align="right" height="50" width="200">
+	</div>
+
+	            <form style="text-align:left;" name="myForm" onsubmit="javascript:return validateForm('myForm' , 'mobile')" method="get" >
+                <input id="search" type='text' placeholder=" Search..." list="phones" name="mobile" maxlength="30" autocomplete="on" autofocus  title="Search just for phones that are in the list,please!" >
+                <datalist id="phones">
+                  <option value="iphone11">
+                  <option value="iphone 11 pro">
+                  <option value="iphone x">
+                  <option value="iphone xr">
+                  <option value="iphone 8+">
+                  <option value="iphone 7">
+                  <option value="iphone 6s">
+                  <option value="iphone 6">
+
+                  </datalist><input id="go" type="submit" formmethod="post" value="Go!"></form>
+                 <script>
+                       function validateForm(myForm , mobile) {
+                           var reg = /^([A-Za-z\-]){1,}\s([A-Za-z0-9\-]){1,}$/;
+                           var x = document.forms[myForm].elements[mobile].value;
+                           if (reg.test(x) === false ||  x === "") {
+                                alert("Not a valid Search. Try another one!");
+                                document.forms[myForm].elements[mobile].focus;
+                                 document.forms[myForm].elements[mobile].focus();
+                                return false;
+                             }
+                          }
+	             </script>
+	<div  id="divoftable" align="center">
+                <table>
+                    <tr>
+                        <td><a href="menutel.html">New Arrivals</a></td>
+                        <td><strong><a href="samsung.html">Samsung</a></strong></td>
+                        <td><a href="oneplus.html">OnePlus</a></td>
+                        <td><a href="iphone.html">Iphone</a></td>
+                        <td><a href="general.html">General</a></td>
+                    </tr>
+                </table>
+            </div>
+			</nav>
+        </header>
+
+        		  <div class="tel">
+        		     <div class="box">
+        			    <div class="imgbox">
+        				  <img src="Foto/9.jpg">
+        				</div>
+        				<div class="detalet">
+        				 <div class="content">
+        				  <h2>Samsung Galaxy S10</h2>
+        				     <p>Permban keto specifika:
+                               SO: android
+        					   Madhesia: 6.1 Inch
+        					   Memoria: 512GB, 8GB RAM
+        					 </p>
+        					 <h2>çmimi: 550$</h2>
+        					</div>
+        				</div>
+        			 </div>
+        			 <div class="box">
+        			    <div class="imgbox">
+        				  <img src="Foto/7.jpg">
+        				</div>
+        				<div class="detalet">
+        				 <div class="content">
+        				  <h2>Samsung Galaxy Note 10</h2>
+        				     <p>Permban keto specifika:
+                               SO: android
+        					   Madhesia: 6.8 Inch
+        					   Memoria: 256GB, 12GB RAM
+        					 </p>
+        		              <h2>çmimi: 450$</h2>
+        					</div>
+        				</div>
+        			 </div>
+        			 <div class="box">
+        			    <div class="imgbox">
+        				  <img src="Foto/A70.png">
+        				</div>
+        				<div class="detalet">
+        				 <div class="content">
+        				  <h2>Samsung Galaxy A70</h2>
+        				     <p>Permban keto specifika:
+                                  SO: android
+        					   Madhesia: 6.7 Inch
+        					   Memoria: 122GB, 6GB RAM
+        					 </p>
+        					 <h2>çmimi: 300$</h2>
+        					</div>
+        				</div>
+        			 </div>
+        		     <div class="box">
+        			    <div class="imgbox">
+        				  <img src="Foto/S7.png">
+        				</div>
+        				<div class="detalet">
+        				 <div class="content">
+        				  <h2>Samsung Galaxy S7 Edge</h2>
+        				     <p>Permban keto specifika:
+        					    SO: android
+        					   Madhesia: 5.5 Inch
+        					   Memoria: 64GB, 4GB RAM
+        					 </p>
+        					 <h2>çmimi: 250$</h2>
+        					</div>
+        				</div>
+        			 </div>
+        			 <div class="box">
+        			    <div class="imgbox">
+        				  <img src="Foto/Fold.png">
+        				</div>
+        				<div class="detalet">
+        				 <div class="content">
+        				  <h2>Samsung Galaxy Fold</h2>
+        				     <p>Permban keto specifika:
+        					    SO: android
+        					   Madhesia: 7.3 Inch
+        					   Memoria: 512GB, 12GB RAM
+        					 </p>
+        					 <h2>çmimi: 750$</h2>
+        					</div>
+        				</div>
+        			 </div>
+        			 <div class="box">
+        			    <div class="imgbox">
+        				  <img src="Foto/A80.png">
+        				</div>
+        				<div class="detalet">
+        				 <div class="content">
+        				  <h2>Samsung Galaxy A80</h2>
+        				     <p>Permban keto specifika:
+                                SO: android
+        					   Madhesia: 6.7 Inch
+        					   Memoria: 122GB, 8GB RAM
+        					 </p>
+        					 <h2>çmimi: 300$</h2>
+        					</div>
+        				</div>
+        			 </div>
+        			 <div class="box">
+        			    <div class="imgbox">
+        				  <img src="Foto/A40.png">
+        				</div>
+        				<div class="detalet">
+        				 <div class="content">
+        				  <h2>Samsung Galaxy A40</h2>
+        				     <p>Permban keto specifika:
+                                SO: android
+        					   Madhesia: 5.9 Inch
+        					   Memoria: 64GB, 4GB RAM
+        					 </p>
+        					 <h2>çmimi: 200$</h2>
+        					</div>
+        				</div>
+        			 </div>
+        			 <div class="box">
+        			    <div class="imgbox">
+        				  <img src="Foto/j7.png">
+        				</div>
+        				<div class="detalet">
+        				 <div class="content">
+        				  <h2>Samsung Galaxy J7</h2>
+        				     <p>Permban keto specifika:
+        					    SO: android
+        					   Madhesia: 5.5 Inch
+        					   Memoria: 16GB, 2GB RAM
+        					 </p>
+        					 <h2>çmimi: 150$</h2>
+        					</div>
+        				</div>
+        			 </div>
+        		  </div>
+        		  <footer id="footer">
+                     <nav>
+                   <hr />
+                   <table align="right" id="footert">
+                       <tr>
+                           <td><a href="https://www.facebook.com/"><img src="Foto/fblogo.png" title="Facebook"></a></td>
+                           <td><a href="https://twitter.com/"><img src="Foto/twlogo.png" title="Twitter"></a></td>
+                           <td><a href="https://www.instagram.com"><img src="ft\instalogo.jpg" title="Instagram"></a></td>
+                           <td><a href="https://www.google.com/"><img src="ft\go.png" title="Google"></a></td>
+
+                       </tr>
+                   </table><br /><br /><br /><br />
+
+                   Copyright &copy; 2019 Thanks for comming!
+        </footer>
+
+	</body>
+
+	</html>

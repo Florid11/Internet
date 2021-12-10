@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IPHONE</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type='text/css' href="iphone.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+              $("#fotoSh").click(function(){
+                   $("#right_left").fadeToggle(500);
+                    $("#right_right").fadeToggle(1000);
+                    });
+                 $("#welcome").click(function(){
+                   $(this).hide(400);
+                   $(this).show(200);
+                });
+              $("#fun").hover(function(){
+                   $(this).slideToggle('fast');
+               });
+            });
+        </script>
+        <script>
+        function funk(){
+             window.alert('Sorry but there is nothing to click!');
+        }
+        function funk2(){
+             window.alert('You just right-clicked!');
+        }
+        </script>
+    </head>
+<body>
+<header style="border-top: #666666 dotted 7px;">
+        <div id="firstdiv" align="center">
+                       <img src="ft\iphonexr.jpg" width="80" height="80" align="left" id="logo" usemap="#map">
+	           	            <map name="map">
+                              <area shape="rect" coords="29,21,38,34" alt="New Arrevals" href="menu.html" />
+                              <area shape="rect" coords="41,26,45,33" alt="Samsung" href="samsung.html" />
+                              <area shape="rect" coords="49,25,59,34" alt="OnePlus" href="oneplus.html" />
+                              <area shape="rect" coords="60,26,63,35" alt="Iphone" href="iphone.html" />
+                              <area shape="rect" coords="71,33,78,36" alt="General" href="general.html" />
+                          </map>
+          <form style="text-align:right;" name="myForm" onsubmit="javascript:return validateForm('myForm' , 'mobile')" method="get" >
+                            <input id="search" type='text' placeholder=" Search..." list="phones" name="mobile" maxlength="30" autocomplete="on" autofocus  title="Search just for phones that are in the list,please!" >
+                            <datalist id="phones">
+                              <option value="iphone11">
+                              <option value="iphone 11 pro">
+                              <option value="iphone x">
+                              <option value="iphone xr">
+                              <option value="iphone 8+">
+                              <option value="iphone 7">
+                              <option value="iphone 6s">
+                              <option value="iphone 6">
+                            </datalist>
+                          </datalist><input id="go" type="submit" value="Go!"  >
+                          </form>
+                             <script>
+                                   function validateForm(myForm , mobile) {
+                                       var reg = /^([A-Za-z\-]){1,}\s([A-Za-z0-9\-]){1,}$/;
+                                       var x = document.forms[myForm].elements[mobile].value;
+                                       if (reg.test(x) === false ||  x === "") {
+                                            alert("Not a valid Search. Try another one!");
+                                            document.forms[myForm].elements[mobile].focus;
+                                             document.forms[myForm].elements[mobile].focus();
+                                            return false;
+                                         }
+                                      }
+                           </script>
+                  <p id="welcome">Welcome!</p>
+
+          </div>
+        <div  id="divoftable" align="center">
+                <table>
+                    <tr>
+                        <td><a href="menutel.html">New Arrivals</a></td>
+                        <td><a href="samsung.html">Samsung</a></td>
+                        <td><a href="oneplus.html">OnePlus</a></td>
+                        <td><strong><a href="iphone.html">IPHONE</a></strong></td>
+                        <td><a href="general.html">General</a></td>
+                    </tr>
+                </table>
+        </div>
+</header>
+        <div id="main_content">
+             <div id="fun" style="text-align:center; width:100%;height: 1.5%; background-color:#48ad48; margin:0; border-top: solid 2px;">
+                <pre style=" color:white;">All I want is a new Iphone.</pre>
+            </div>
+		<div class="shablloni" style=" -webkit-box-shadow:0 0 .5em rgb(4,6,5);">
+                    <div id="left">
+                        <img id="fotoSh" src="ft\iphonee.jpg" alt="Phones" title="Iphone 11" />
+                    </div>
+                    <div id="right"  title="Nothing to click!" onclick="funk()" oncontextmenu="funk2()" style="text-transform:uppercase;">
+                        <div id="right_left">
+                        <h1 style=" margin-left:40px;">Iphone 11</h1>
+                         <dl>
+                             <dt><h2><b>Storage</b></h2>
+                                <dl>
+                                    <dt><b>32 GB</b></dt>
+                                    <dt><strong>64 GB</strong></dt>
+                                    <dt><strong>128 GB</strong></dt>
+                                    <dt><strong>256 GB</strong></dt>
+                                    </dl>
+                            </dt>
+                         </dl>
+                       </div>
+                        <div id="right_right">
+                                <dl>
+                                    <dt><h2>Color</h2>
+                                        <dl>
+                                            <dt><strong>Red</strong></dt>
+                                            <dt><strong>White</strong></dt>
+                                            <dt><strong>Grey</strong></dt>
+                                            <dt><strong>Black</strong></dt>
+                                            <dt><strong>Gold</strong></dt>
+                                        </dl>
+                                    </dt>
+                                </dl>
+                        </div>
+                    </div>
+	        </div>
+                <div id="second_div">
+                    <div class="item_left">
+                        <img src="ft\iphone11grey.jpg" title="$949.99"/>
+                      <q style="font-size:20px;" >Iphone 11 Black</q>
+                         <p style="padding-left:25px;color:white;width:25%; font-style: italic;" title="Price" >$949.99</p>
+                    </div>
+                <div class="item_left">
+                        <img src="ft\iphone11g.jpg" title="$955.99"/>
+                        <q style="font-size:20px;" >Iphone 11 Gold</q>
+                         <p style="padding-left:25px;color:white;width:25%; font-style:italic;" title="Price" >$955.99</p>
+                </div>
+                <div class="item_left">
+                        <img src="ft\iphone11redd.jpg" title="$889.99"/>
+                        <q style="font-size:20px;" >Iphone 11 Red</q>
+                         <p style="padding-left:25px;color:white; width:25%; font-style: italic;" title="Price" >$889.99</p>
+                </div>
+                <div class="item_right">
+                        <img src="ft\iphone11blue.jpg" title="$899.99" />
+                        <q style="font-size:20px;" >Iphone 11 Blue</q>
+                         <p style="padding-left:25px;color:white;width:25%; font-style: italic;;" title="Price" >$899.99</p>
+                </div>
+
+                </div>
+               <div class="shablloni" style=" -webkit-box-shadow:0 0 .5em rgb(4,6,5);">
+                    <div id="left">
+                        <img id="fotoSh" src="ft\iphonexs.jpg" alt="Iphone X " title="Iphone X" />
+                    </div>
+                    <div id="right" title="Nothing to click!" onclick="funk()" oncontextmenu="funk2()" style="text-transform:uppercase;" >
+                        <div id="right_left" >
+                        <h1 style=" margin-left:60px;">Iphone x</h1>
+                         <dl>
+                             <dt><h2>Storage</h2>
+                                <dl>
+                                    <dt><strong>32</strong></dt>
+                                    <dt><strong>64</strong></dt>
+                                    <dt><strong>128</strong></dt>
+                                    <dt><strong>256</strong></dt>
+
+                                </dl>
+                            </dt>
+                         </dl>
+                       </div>
+                        <div id="right_right">
+                                <dl>
+                                    <dt><h2>Color</h2>
+                                        <dl>
+                                            <dt><strong>Red</strong></dt>
+                                            <dt><strong>White</strong></dt>
+                                            <dt><strong>Grey</strong></dt>
+                                            <dt><strong>Blue</strong></dt>
+                                            <dt><strong>Gold</strong></dt>
+                                        </dl>
+                                    </dt>
+                                </dl>
+                        </div>
+                    </div>
+	        </div>
+                <div id="second_div">
+                    <div class="item_left">
+                        <img src="ft\iphonexblack.jpg" title="$720.99"/>
+                      <q style="font-size:20px;" >  Iphone X Black</q>
+                          <p style="padding-left:30px;color:white;width:35%; font-style: italic;" title="Price" >$720.99</p>
+                    </div>
+                <div class="item_left">
+                        <img src="ft\iphonexred.jpg" title="$715.99"/>
+                      <q style="font-size:20px;" >  Iphone X Red</q>
+                          <p style="padding-left:30px;color:white; width:35%;font-style: italic;" title="Price" >$715.99</p>
+                </div>
+                <div class="item_left">
+                        <img src="ft\iphonexwhite.jpg" title="$718.99"/>
+                      <q style="font-size:20px;" >  Iphone X White</q>
+                          <p style="padding-left:30px;color:white;width:35%; font-style: italic;" title="Price" >$718.99</p>
+                </div>
+                <div class="item_right">
+                        <img src="ft\iphonexpink.jpg" title="$725.99"/>
+                      <q style="font-size:20px;" >Iphone X Pink</q>
+                          <p style="padding-left:30px;color:white;width:35%; font-style: italic;" title="Price" >$725.99</p>
+                </div>
+
+                </div>
+             <div class="shablloni" style=" -webkit-box-shadow:0 0 .5em rgb(4,6,5);">
+                    <div id="left">
+                        <img style="width:550px;height:349px;" src="ft\iphone8.jpg" alt="Iphone 8 " title="Iphone 8" />
+                    </div>
+                 <div id="right" title="Nothing to click!" onclick="funk()" oncontextmenu="funk2()" style="text-transform:uppercase;">
+                       <div id="right_left">
+                        <h1 style=" margin-left:60px;">Iphone 8</h1>
+                         <dl>
+                             <dt><h2>Storage</h2>
+                                <dl>
+                                    <dt><strong>32</strong></dt>
+                                    <dt><strong>64</strong></dt>
+                                    <dt><strong>128</strong></dt>
+                                    <dt><strong>256</strong></dt>
+                                </dl>
+                            </dt>
+                         </dl>
+                       </div>
+                        <div id="right_right">
+                                <dl>
+                                    <dt><h2>Color</h2>
+                                        <dl>
+                                            <dt><strong>Red</strong></dt>
+                                            <dt><strong>White</strong></dt>
+                                            <dt><strong>Pink</strong></dt>
+                                            <dt><strong>Black</strong></dt>
+                                        </dl>
+                                    </dt>
+                                </dl>
+                        </div>
+                    </div>
+	        </div>
+                <div id="second_div">
+                    <div class="item_left">
+                        <img src="ft\iphone8white.jpg" title="$530.99"/>
+                        <q style="font-size:20px;" >Iphone 8 White</q>
+                        <p style="padding-left:25px;color:white;width:35%; font-style: italic;" title="Price" >$530.99</p>
+                    </div>
+                <div class="item_left">
+                        <img src="ft\iphone8black.jpg" title="$525.99"/>
+                      <q style="font-size:20px;" >Iphone 8 Black</q>
+                         <p style="padding-left:25px;color:white;width:35%; font-style: italic;" title="Price" >$525.99</p>
+                </div>
+                <div class="item_left">
+                        <img src="ft\iphone8gold.jpg" title="$520.99"/>
+                        <q style="font-size:20px;" >Iphone 8 Gold</q>
+                         <p style="padding-left:25px;color:white;width:35%; font-style: italic;" title="Price" >$520.99</p>
+                </div>
+                <div class="item_right">
+                        <img src="ft\iphone8red.jpg" title="$500.99"/>
+                         <q style="font-size:20px;" >Iphone 8 Red</q>
+                         <p style="padding-left:25px;color:white; width:35%;font-style: italic;" title="Price" >$500.99</p>
+                </div>
+
+                </div>
+        </div>
+
+         <footer id="footer">
+             <nav>
+           <hr />
+                   <table align="right" id="footert">
+                       <tr>
+                           <td><a href="https://www.facebook.com/"><img src="ft\fblogo.jpg" title="Facebook"></a></td>
+                           <td><a href="https://twitter.com/"><img src="ft\twlogo.jpg" title="Twitter"></a></td>
+                           <td><a href="https://www.instagram.com"><img src="ft\instalogo.jpg" title="Instagram"></a></td>
+                           <td><a href="https://www.google.com/"><img src="ft\go.png" title="Google"></a></td>
+
+                       </tr>
+                   </table><br /><br /><br /><br />
+
+                   Copyright &copy; 2019 Thanks for comming!
+        </footer>
+    </body>
+</html>
